@@ -1,0 +1,88 @@
+/* Reset semua elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  
+  /* Body umum */
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #e6f2ff;
+    color: #333;
+  }
+  
+  /* Header dan Navbar */
+  header {
+    background: #0077b6;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo img {
+    height: 40px;
+    
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero section */
+  .hero {
+    padding: 100px 20px;
+    text-align: center;
+    background: #caf0f8;
+  }
+  
+  .hero.pengalaman {
+    background: #ade8f4;
+  }
+  
+  .hero.tentang {
+    background: #90e0ef;
+  }
+  
+  /* Footer */
+  footer {
+    background: #0077b6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+  
+  /* Responsive untuk HP */
+  @media (max-width: 768px) {
+    .nav-links {
+      flex-direction: column;
+      background: #0077b6;
+    }
+    .nav-links li {
+      margin: 10px 0;
+    }
+  }
